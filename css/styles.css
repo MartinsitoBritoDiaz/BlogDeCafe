@@ -1,0 +1,17 @@
+:root{
+    --fuenteHeading: 'PT Sans', sans-serif;
+    --fuenteParagraph: 'Open Sans', sans-serif;
+    
+    --primario: #784D3C;
+    --white: #FFFFFF;
+    --negro: #0000;
+}
+
+html{
+    box-sizing: border-box;
+    font-size: 62.5%; /*1 rem = 10px*/
+}
+
+*, *:before, *:after{
+    box-sizing: inherit;
+}
