@@ -53,10 +53,16 @@ img{ max-width: 100%;}
 
 .text-center{ text-align: center;}
 
-/* Header */
+/* Webp */
+.webp .header{
+    background-image: url(/img/banner.webp);
+}
 
-.header{
+.no-webp .header{
     background-image: url(/img/banner.jpg);
+}
+/* Header */
+.header{
     height: 50rem;
     background-size: cover;
     background-repeat: no-repeat;
