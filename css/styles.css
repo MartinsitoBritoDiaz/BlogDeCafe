@@ -54,12 +54,11 @@ img{ max-width: 100%;}
 .text-center{ text-align: center;}
 
 /* Webp */
-.webp .header{
-    background-image: url(/img/banner.webp);
+.webp .header {
+    background-image: url(../img/banner.webp);
 }
-
-.no-webp .header{
-    background-image: url(/img/banner.jpg);
+.no-webp .header {
+    background-image: url(../img/banner.jpg);
 }
 /* Header */
 .header{
