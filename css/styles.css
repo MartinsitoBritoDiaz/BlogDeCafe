@@ -191,5 +191,6 @@ img{ max-width: 100%;}
         grid-template-columns: repeat(2, 1fr);
         column-gap: 2rem;
         margin-bottom: 3rem;
+        padding: 0;
     }
 }
