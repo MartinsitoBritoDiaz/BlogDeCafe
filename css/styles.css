@@ -218,5 +218,9 @@ img{ max-width: 100%;}
     }
 }
 
-.curso__img{
+/* Entrada */
+.entrada__span{
+    color: var(--negro);
+    font-family: var(--fuenteHeading);
+    font-weight: 700;
 }
