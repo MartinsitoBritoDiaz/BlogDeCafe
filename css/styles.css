@@ -4,7 +4,7 @@
     
     --primario: #784D3C;
     --white: #FFFFFF;
-    --negro: #0000;
+    --negro: #000;
 }
 
 html{
@@ -22,7 +22,7 @@ body{
 
 /* GLobales */
 .contenedor{
-    width: 90%;
+    width: min(90%, 120rem);
     margin: 0 auto;
 }
 
@@ -30,6 +30,7 @@ a{ text-decoration: none;}
 
 h1,h2,h3,h4{
     font-family: var(--fuenteHeading);
+    line-height: 1.2;
 }
 
 h1{ font-size: 4.8rem; }
@@ -74,8 +75,9 @@ img{ max-width: 100%;}
 @media (min-width: 768px) {
     .barra{
        display: flex;
-       justify-content: space-around;
+       justify-content: space-between;
        align-items: center; 
+       padding-top: 4rem;
     }
 }
 
@@ -103,4 +105,81 @@ img{ max-width: 100%;}
     text-align: center;
     font-size: 1.8rem;
     color: var(--white);
+}
+
+/* Contenido principal */
+@media (min-width: 768px) {
+    .contenido-principal{
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        column-gap: 5rem;
+    }
+}
+
+.entrada{
+    border-bottom: 0.1rem solid gray;
+    margin-bottom: 2rem;
+}
+
+.entrada:last-of-type{
+    border-bottom: none;
+}
+
+.boton{
+    padding: 1rem 3rem;
+    color: white;
+    font-size: 1.5rem;
+    font-family: var(--fuenteHeading);
+    display: block;
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 2rem;
+    font-weight: 700;
+}
+
+@media (min-width: 768px) {
+    .boton{
+        display: inline-block;   
+    }
+}
+
+.boton--primario{
+    background-color: var(--negro);
+}
+
+.boton--secundario{
+    background-color: var(--primario);
+}
+
+.cursos{
+    list-style: none;
+}
+
+.widget-cursos{
+    border-bottom: .1rem solid var(--primario);
+    margin-bottom: 2rem;
+}
+
+.widget-cursos:last-of-type{
+    border-bottom: none;
+    margin-bottom: 0%;
+}
+
+.widget-curso__label{
+    font-family: var(--fuenteHeading);
+    font-weight: 700;
+}
+
+.widget-curso__info{
+    font-weight: 400;
+}
+
+.widget-curso__info,
+.widget-curso__label{
+    font-size: 2rem;
+}
+
+.footer{
+    background-color: var(--negro);
+    padding-bottom: 4rem;
 }
